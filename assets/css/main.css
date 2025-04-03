@@ -1,0 +1,14 @@
+@import 'tailwindcss';
+
+@theme {
+    --font-display-base: 'Manrope', 'sans-serif';
+    --font-display-second: 'Roboto', 'sans-serif';
+
+    --color-accent: #f2f60f;
+    --color-dark: #151a26;
+}
+
+html,
+body {
+    @apply h-full bg-dark antialiased font-display-base;
+}
