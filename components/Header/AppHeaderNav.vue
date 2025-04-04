@@ -18,7 +18,7 @@ const navItems = [
     },
     {
         name: 'Новости',
-        to: '/',
+        to: '/news',
     },
     {
         name: 'Подборки',
@@ -33,11 +33,11 @@ const navItems = [
 
 <template>
     <nav>
-        <ul class="flex gap-4">
+        <ul class="hidden flex-col gap-4 md:flex md:flex-row">
             <li
                 v-for="(item, index) in navItems"
                 :key="index"
-                class="text-[13px] lg:text-[17px] font-bold border-b-2 border-transparent duration-200 hover:border-accent"
+                class="hover:border-accent border-b-2 border-transparent text-[13px] font-bold duration-200 lg:text-[15px] xl:text-[17px]"
             >
                 <RouterLink :to="item.to">{{ item.name }}</RouterLink>
             </li>

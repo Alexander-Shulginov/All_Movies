@@ -11,5 +11,12 @@ export default defineNuxtConfig({
     modules: ['@nuxt/fonts', '@nuxtjs/svg-sprite'],
     app: {
         head: headConfig,
+        pageTransition: { name: 'page', mode: 'out-in' },
     },
+    components: [
+        {
+            path: '~/components',
+            pathPrefix: false,
+        },
+    ],
 })
