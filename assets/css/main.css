@@ -4,11 +4,24 @@
     --font-display-base: 'Manrope', 'sans-serif';
     --font-display-second: 'Roboto', 'sans-serif';
 
-    --color-accent: #f2f60f;
+    --color-accent: #375EE8;
+    --color-accent-second: #f2f60f;
     --color-dark: #151a26;
+    --color-bg-base: #1e2538;
 }
 
 html,
 body {
-    @apply h-full bg-dark antialiased font-display-base;
+    @apply container mx-auto text-white px-3 h-full bg-bg-base antialiased font-display-base;
+}
+
+a {
+    display: inline-block;
+}
+
+a,
+button,
+input,
+textarea {
+    @apply focus-visible:outline-2 outline-accent outline-offset-3 
 }

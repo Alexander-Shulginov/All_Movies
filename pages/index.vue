@@ -1,7 +1,13 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+useSeoMeta({
+    title: 'All Movies',
+    description: 'All moves service',
+})
+</script>
 
 <template>
-    <main class="container mx-auto px-3 text-white py-6">
+    <AppHeader />
+    <main>
         <BaseTitle
             :size="'large'"
             :tag="'h2'"

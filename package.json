@@ -18,6 +18,8 @@
   },
   "devDependencies": {
     "@nuxt/fonts": "^0.11.1",
-    "@nuxtjs/svg-sprite": "^1.0.2"
+    "@nuxtjs/svg-sprite": "^1.0.2",
+    "prettier": "^3.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.11"
   }
 }
