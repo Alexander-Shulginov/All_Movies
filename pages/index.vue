@@ -6,11 +6,5 @@ useSeoMeta({
 </script>
 
 <template>
-    <BaseTitle
-        :size="'large'"
-        :tag="'h2'"
-        :weight="'black'"
-        :text="'Сейчас в кино'"
-        class="mb-12"
-    />
+    <ActualFilms />
 </template>
