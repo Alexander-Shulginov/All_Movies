@@ -3,5 +3,6 @@
 <template>
     <div class="container mx-auto px-2 py-10">
         <LastTrailersTop />
+        <LastTrailerVideo />
     </div>
 </template>
