@@ -2,7 +2,7 @@
 
 <template>
     <nuxt-link to="/" class="group ">
-        <div class="relative mb-2.5 rounded-xl overflow-hidden">
+        <div class="relative mb-2.5 rounded-[10px] overflow-hidden">
             <NuxtImg
                 src="/card-test.jpg"
                 width="340"
@@ -11,7 +11,7 @@
                 class="rounded-xl object-cover duration-500 transition-transform group-hover:scale-104"
             />
             <div
-                class="absolute top-3 right-3 rounded-sm bg-blue-400 px-2 text-[12px] lg:text-[16px]"
+                class="absolute top-3 right-3 rounded-sm bg-green-400 px-3 py-1 text-[12px] lg:text-[16px] font-bold"
             >
                 6.90
             </div>
