@@ -7,4 +7,5 @@ useSeoMeta({
 
 <template>
     <ActualFilms />
+    <LastTrailers />
 </template>

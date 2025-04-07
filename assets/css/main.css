@@ -15,10 +15,6 @@ body {
     @apply bg-bg-base font-display-base text-white antialiased;
 }
 
-a {
-    display: inline-block;
-}
-
 a,
 button,
 input,
