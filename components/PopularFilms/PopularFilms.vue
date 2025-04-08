@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import {  fetchMovieById } from '~/services/moviesServices'
-
 export interface ITabMenu {
     name: string
     fetch: Function
@@ -38,9 +36,7 @@ const tabsMenu: ITabMenu[] = [
     },
 ]
 
-onMounted(() => {
-    fetchMovieById(3344)
-})
+onMounted(() => {})
 </script>
 
 <template>
