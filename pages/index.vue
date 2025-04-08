@@ -6,6 +6,9 @@ useSeoMeta({
 </script>
 
 <template>
-    <ActualFilms />
-    <LastTrailers />
+    <div>
+        <ActualFilms />
+        <LastTrailers />
+        <PopularFilms />
+    </div>
 </template>

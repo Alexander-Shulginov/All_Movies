@@ -27,14 +27,7 @@
             </div>
         </div>
         <br />
-        <iframe
-            class="mb-3 aspect-video w-full rounded-[10px]"
-            src="https://rutube.ru/play/embed/b69c723287d2d074236025bec62afdf7"
-            frameBorder="0"
-            webkitAllowFullScreen
-            mozallowfullscreen
-            allowFullScreen
-        ></iframe>
+        <iframe class="mb-3 aspect-video w-full rounded-[10px]"></iframe>
         <div class="flex items-center justify-between gap-3">
             <p
                 class="text-[25px] font-black sm:text-[30px] md:text-[35px] lg:text-[45px]"
@@ -46,8 +39,3 @@
     </div>
 </template>
 
-<style scoped>
-.raichu-player-controls-module__controls___uYbhQ {
-    display: none !important;
-}
-</style>

@@ -1,10 +1,17 @@
 import tailwindcss from '@tailwindcss/vite'
 import { headConfig } from './config/head'
 
+
 export default defineNuxtConfig({
     compatibilityDate: '2025-04-03',
     devtools: { enabled: true },
     css: ['~/assets/css/main.css'],
+    runtimeConfig: {
+        public: {
+            tmdbBaseUrl: 'https://api.themoviedb.org/3',
+        },
+        tmdbApiKey: process.env.TMDB_API_KEY
+    },
     vite: {
         plugins: [tailwindcss()],
     },
@@ -23,12 +30,5 @@ export default defineNuxtConfig({
         provider: 'ipx',
         format: ['webp'],
         quality: 85,
-        // screens: {
-        //     xs: 150,
-        //     sm: 320,
-        //     md: 640,
-        //     lg: 1024,
-        //     xl: 1280,
-        // },
     },
 })

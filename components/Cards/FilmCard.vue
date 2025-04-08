@@ -8,7 +8,7 @@
                 width="340"
                 height="480"
                 alt="Card img"
-                class="rounded-xl object-cover duration-500 transition-transform group-hover:scale-104"
+                class="rounded-xl w-100 object-cover duration-500 transition-transform group-hover:scale-104"
             />
             <div
                 class="absolute top-3 right-3 rounded-sm bg-green-400 px-3 py-1 text-[12px] lg:text-[16px] font-bold"

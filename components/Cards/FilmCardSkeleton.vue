@@ -1,7 +1,7 @@
 <template>
     <div class="animate-pulse">
         <div
-            class="mb-4 flex h-75 items-center justify-center rounded-sm bg-gray-300 dark:bg-gray-700"
+            class="mb-4 flex h-100 items-center justify-center rounded-sm bg-gray-300 dark:bg-gray-700"
         >
             <svg
                 class="h-10 w-10 text-gray-200 dark:text-gray-600"
