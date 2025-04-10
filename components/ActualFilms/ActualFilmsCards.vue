@@ -13,7 +13,7 @@ const maxCard = 8
         <FilmCardSkeleton v-if="status === 'pending'" v-for="i in 8" />
         <FilmCard
             v-else
-            v-for="i in data"
+            v-for="i in data.results"
             :name="i.title"
             :img="i.poster_path"
         />
