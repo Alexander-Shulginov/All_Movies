@@ -8,11 +8,11 @@ export interface ITabMenu {
 const tabsMenu: ITabMenu[] = [
     {
         name: 'Все',
-        fetch: () => console.log('All'),
+        fetch: () => getAllMovie(),
     },
     {
         name: 'Боевики',
-        fetch: () => console.log('Action'),
+        fetch: () => getAllMovie2(),
     },
     {
         name: 'Приключения',
@@ -35,12 +35,34 @@ const tabsMenu: ITabMenu[] = [
         fetch: () => console.log(2),
     },
 ]
+
+const datas = ref([])
+let statusValue = ref<any>('')
+
+const { status, data, refresh } = await useLazyFetch<any>(
+    '/api/tmdb/discover/movie',
+)
+datas.value = data.value.results
+
+const getAllMovie = async () => {
+    const { status, data, refresh } = await useLazyFetch<any>(
+        '/api/tmdb/discover/movie?with_genres=27',
+    )
+    datas.value = data.value.results
+}
+
+const getAllMovie2 = async () => {
+    const { status, data, refresh } = await useLazyFetch<any>(
+        '/api/tmdb/discover/movie?with_genres=28',
+    )
+    datas.value = data.value.results
+}
 </script>
 
 <template>
     <section class="container mx-auto px-2 py-7.5 md:pb-12.5">
         <ActualFilmsTop :items="tabsMenu" />
-        <ActualFilmsCards />
+        <ActualFilmsCards :data="datas" :status="statusValue" />
         <ActualFilmsShowMore />
     </section>
 </template>
